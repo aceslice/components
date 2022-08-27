@@ -1,1 +1,6 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  font-family: "Montserrat";
+  line-height: 1.5em;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */
