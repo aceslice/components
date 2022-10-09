@@ -1,6 +1,165 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face {
+  font-family: Satoshi;
+  src: url(../Fonts/Satoshi-Medium.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: "Montserrat";
+  font-family: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: aliceblue;
   line-height: 1.5em;
-  font-size: 15px;
+  color: #354b5c;
+}
+.description {
+  width: 500px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 100px rgba(0, 0, 0, 0.1);
+  h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: darkgray;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .text {
+    color: gray;
+    margin-bottom: 16px;
+  }
+  .tags {
+    .sub {
+      color: darkgray;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .chips {
+      display: flex;
+      gap: 8px;
+      .chip {
+        padding: 10px 12px;
+        border: 2px solid #f9f9f9;
+        font-size: 13px;
+        border-radius: 10px;
+        font-weight: 550;
+        cursor: pointer;
+        text-align: center;
+        transition: 200ms;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+.blog {
+  padding: 32px;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 100px rgba(0, 0, 0, 0.1);
+  .main {
+    margin-bottom: 16px;
+  }
+  .sec {
+    margin-bottom: 32px;
+  }
+  .img-container {
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+    gap: 16px;
+    img {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+    }
+    .name {
+      color: gray;
+      font-size: 20px;
+    }
+  }
+  h3 {
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: darkgray;
+    margin-bottom: 16px;
+  }
+  .chips {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    .chip {
+      padding: 12px 24px;
+      background: #f9f9f9;
+      border-radius: 25px;
+      text-align: center;
+      transition: 200ms;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+.card {
+  padding: 16px;
+  width: 270px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 100px rgba(0, 0, 0, 0.1);
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+  }
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    h1 {
+      font-size: 26px;
+    }
+    .price {
+      font-size: 14px;
+      color: #3e8ef4;
+    }
+  }
+  .text {
+    margin-bottom: 16px;
+    color: gray;
+  }
+  button {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: #3e8ef4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Satoshi;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 200ms;
+    &:hover {
+      box-shadow: 5px 5px #3e8ef4;
+      color: #3e8ef4;
+      border-radius: 0;
+      background: #fff;
+      border: 2px solid #3e8ef4;
+    }
+  }
 }
